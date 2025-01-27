@@ -1,0 +1,3656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82D393C2-3CFC-46AB-A0D6-2720F5A66E71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ICON_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>ICON_SYSTEM</RootNamespace>
+    <AssemblyName>ICON_SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\User\Desktop\SET_UP\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ICON_MANAGEMENT_SYSTEM</ProductName>
+    <PublisherName>THE ICON CLINIC</PublisherName>
+    <SuiteName>ICON_MANAGEMENT_SYSTEM</SuiteName>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ICON_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ICON_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>the_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>16D0D7214C351D09D7EAD1AD211946F17E9FB6D7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ICON_SYSTEM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ICON_SYSTEM_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="epplus">
+      <HintPath>..\..\..\..\..\Downloads\epplus.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\2022CODEandMySQLdataDLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.Common" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a.Designer.vb">
+      <DependentUpon>a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="dbconnection.vb" />
+    <Compile Include="frm3COMMENT.Designer.vb">
+      <DependentUpon>frm3COMMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm3COMMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm4FINANCE_PENDNGS.Designer.vb">
+      <DependentUpon>frm4FINANCE_PENDNGS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm4FINANCE_PENDNGS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SIVOUCHER.Designer.vb">
+      <DependentUpon>frm8SIVOUCHER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SIVOUCHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_APV_PAYMENT_REQUEST.Designer.vb">
+      <DependentUpon>frm8SI_APV_PAYMENT_REQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_APV_PAYMENT_REQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_APV_REIMBURSEMENT.Designer.vb">
+      <DependentUpon>frm8SI_APV_REIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_APV_REIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_APV_RF_REPLENISHMENT.Designer.vb">
+      <DependentUpon>frm8SI_APV_RF_REPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_APV_RF_REPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_COO.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_GM_COO.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_GM_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_GM_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_COO.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_GM_COO.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_GM_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_GM_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_SUPPLIER.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_SUPPLIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION_SUPPLIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_APV_CA_LIQUIDATION.Designer.vb">
+      <DependentUpon>frm8SI_APV_CA_LIQUIDATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_APV_CA_LIQUIDATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_CALIQ.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_CALIQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_CALIQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_CASHADVANCE.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_CASHADVANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_CASHADVANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_COO.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_FUNDTRANSFER.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_FUNDTRANSFER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_FUNDTRANSFER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_GM.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_PAYREQUEST.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_PAYREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_PAYREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_REIMREQUEST.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_REIMREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_REIMREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RELEASING.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RELEASING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RELEASING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RFREPLENISHMENT.Designer.vb">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RFREPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CHECKVOUCHER_RFREPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CR_DR.Designer.vb">
+      <DependentUpon>frm8SI_CR_DR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CR_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_COO.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_GM.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_PO.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_LIQUIDATION_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RELEASE.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RELEASE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RELEASE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REIMBURSEMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PETTYCASHVOUCHER_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_COO_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PO_COO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_COO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_GMLIST.Designer.vb">
+      <DependentUpon>frm8SI_PO_GMLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_GMLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_GM_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PO_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_MANAGERLIST.Designer.vb">
+      <DependentUpon>frm8SI_PO_MANAGERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_MANAGERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PO_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_MODIFYFORM.Designer.vb">
+      <DependentUpon>frm8SI_PO_MODIFYFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_MODIFYFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_MODIFYLIST.Designer.vb">
+      <DependentUpon>frm8SI_PO_MODIFYLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_MODIFYLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_PR_LIST.Designer.vb">
+      <DependentUpon>frm8SI_PO_PR_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_PR_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PO_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_1.Designer.vb">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_2.Designer.vb">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_3.Designer.vb">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_ADDSUPPLIER_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_COOLIST.Designer.vb">
+      <DependentUpon>frm8SI_PR_COOLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_COOLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_COO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_COO_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM_VIEW.Designer.vb">
+      <DependentUpon>frm8SI_PR_COO_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_COO_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_PR_FORM_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_FORM_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_GMLIST.Designer.vb">
+      <DependentUpon>frm8SI_PR_GMLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_GMLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_GM_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM_VIEW.Designer.vb">
+      <DependentUpon>frm8SI_PR_GM_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_GM_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGERLIST.Designer.vb">
+      <DependentUpon>frm8SI_PR_MANAGERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM_VIEW.Designer.vb">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MANAGER_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_1.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_2.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_3.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_ADDSUPPLIER_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_MODIFY_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_MODIFY_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_REQUEST_LIST.Designer.vb">
+      <DependentUpon>frm8SI_PR_REQUEST_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_REQUEST_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_PR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN_FORM.Designer.vb">
+      <DependentUpon>frm8SI_PR_RETURN_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN_FORM_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_PR_RETURN_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PR_RETURN_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_COO.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REIMBURSEMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTLIST.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTLIST_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTLIST_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTLIST_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_COO.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_GM_FORM.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_MODIFY.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_REQUESTSLIP_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_REQUESTSLIP_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_CHECKED.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_CHECKED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_CHECKED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_COO.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_FINAL.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_FINANCE.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_MANAGER.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_RECORD.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_RETURN.Designer.vb">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_RF_REPLENISHMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_PO.Designer.vb">
+      <DependentUpon>frm8SI_TRACKER_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_PR.Designer.vb">
+      <DependentUpon>frm8SI_TRACKER_PR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_PR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_SLP.Designer.vb">
+      <DependentUpon>frm8SI_TRACKER_SLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_TRACKER_SLP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CR_MANUAL.Designer.vb">
+      <DependentUpon>frm8SI_CR_MANUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CR_MANUAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_COO.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_EMY.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_EMY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_EMY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CA_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CA_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmACCOUNTTITLE.Designer.vb">
+      <DependentUpon>frmACCOUNTTITLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmACCOUNTTITLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAPPROVED_PR.Designer.vb">
+      <DependentUpon>frmAPPROVED_PR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAPPROVED_PR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE.Designer.vb">
+      <DependentUpon>frm8SI_CASHADVANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CASHADVANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCATEGORY.Designer.vb">
+      <DependentUpon>frmCATEGORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCATEGORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCHANGEPASS.Designer.vb">
+      <DependentUpon>frmCHANGEPASS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHANGEPASS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCLASSIFICATION.Designer.vb">
+      <DependentUpon>frmCLASSIFICATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCLASSIFICATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOO_PO_APPROVAL_FORM.Designer.vb">
+      <DependentUpon>frmCOO_PO_APPROVAL_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOO_PO_APPROVAL_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOO_PO_APPROVAL_LIST.Designer.vb">
+      <DependentUpon>frmCOO_PO_APPROVAL_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOO_PO_APPROVAL_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL.Designer.vb">
+      <DependentUpon>frmCOO_PR_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL_FINAL.Designer.vb">
+      <DependentUpon>frmCOO_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL_LIST.Designer.vb">
+      <DependentUpon>frmCOO_PR_APPROVAL_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOO_PR_APPROVAL_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_COO.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_COO.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_COO.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_COO.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CASHADVANCE_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CASHADVANCE_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CHECKVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_CHECKVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_PAYMENTREQUEST_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_PAYMENTREQUEST_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_RF_REPLENISHMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_8SI_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_8SI_RF_REPLENISHMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CASHADVANCE_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CASHADVANCE_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CA_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CA_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CHECKVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_CHECKVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_PAYMENTREQUEST_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_PAYMENTREQUEST_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_RF_REPLENISHMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmVIEW_TIC_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIEW_TIC_RF_REPLENISHMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_MODIFY_SRS_FORM.Designer.vb">
+      <DependentUpon>frmDR_WAREHOUSE_MODIFY_SRS_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_MODIFY_SRS_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_MODIFY_SRS_LIST.Designer.vb">
+      <DependentUpon>frmDR_WAREHOUSE_MODIFY_SRS_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_MODIFY_SRS_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_SRS_FORM.Designer.vb">
+      <DependentUpon>frmDR_WAREHOUSE_SRS_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_SRS_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_SRS_LIST.Designer.vb">
+      <DependentUpon>frmDR_WAREHOUSE_SRS_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_WAREHOUSE_SRS_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm2EXTRACTION.Designer.vb">
+      <DependentUpon>frm2EXTRACTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm2EXTRACTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGENERICNAME.Designer.vb">
+      <DependentUpon>frmGENERICNAME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGENERICNAME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PO_COOLIST.Designer.vb">
+      <DependentUpon>frm8SI_PO_COOLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PO_COOLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPURPOSE.Designer.vb">
+      <DependentUpon>frmPURPOSE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPURPOSE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSUPPLIER_FINANCE.Designer.vb">
+      <DependentUpon>frmSUPPLIER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUPPLIER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSUPPLIER_FINANCE_LIST.Designer.vb">
+      <DependentUpon>frmSUPPLIER_FINANCE_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUPPLIER_FINANCE_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_GM_COO.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_GM_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_GM_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_CASHADVANCE_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CASHADVANCE_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_GM_COO.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_GM_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_GM_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CA_LIQUIDATION_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_CALIQ.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_CALIQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_CALIQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_CASHADVANCE.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_CASHADVANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_CASHADVANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_COO.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_FUNDTRANSFER.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_FUNDTRANSFER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_FUNDTRANSFER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_GM.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_PAYREQUEST.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_PAYREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_PAYREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_REIMREQUEST.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_REIMREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_REIMREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RELEASING.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RELEASING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RELEASING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RFREPLENISHMENT.Designer.vb">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RFREPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_CHECKVOUCHER_RFREPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_COO.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_COO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_COO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_GM.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_PO.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PAYMENTREQUEST_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_LIQUIDATION_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REPLENISHMENT.Designer.vb">
+      <DependentUpon>frm8SI_PCV_REPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PCV_REPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RELEASE.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RELEASE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RELEASE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PCV_REIMBURSEMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PETTYCASHVOUCHER_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_COOLIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_COOLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_COOLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_COO_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_COO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_COO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_GMLIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_GMLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_GMLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_GM_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_MANAGERLIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_MANAGERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_MANAGERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_MODIFYFORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_MODIFYFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_MODIFYFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_MODIFYLIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_MODIFYLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_MODIFYLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_PR_LIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_PR_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_PR_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PO_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_RETURNLIST.Designer.vb">
+      <DependentUpon>frmTIC_PO_RETURNLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_RETURNLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PO_RETURN_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PO_RETURN_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PO_RETURN_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_COOLIST.Designer.vb">
+      <DependentUpon>frmTIC_PR_COOLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_COOLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_COO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_COO_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM_VIEW.Designer.vb">
+      <DependentUpon>frmTIC_PR_COO_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_COO_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGM_PO_APPROVAL_FORM.Designer.vb">
+      <DependentUpon>frmGM_PO_APPROVAL_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGM_PO_APPROVAL_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGM_PO_APPROVAL_LIST.Designer.vb">
+      <DependentUpon>frmGM_PO_APPROVAL_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGM_PO_APPROVAL_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL_FINAL.Designer.vb">
+      <DependentUpon>frmGM_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL.Designer.vb">
+      <DependentUpon>frmGM_PR_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL_LIST.Designer.vb">
+      <DependentUpon>frmGM_PR_APPROVAL_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGM_PR_APPROVAL_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmITEM.Designer.vb">
+      <DependentUpon>frmITEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmITEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmITEMLIST.Designer.vb">
+      <DependentUpon>frmITEMLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmITEMLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION.Designer.vb">
+      <DependentUpon>frm8SI_CA_LIQUIDATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_CA_LIQUIDATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLOGINFORM.Designer.vb">
+      <DependentUpon>frmLOGINFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLOGINFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPORECORDS.Designer.vb">
+      <DependentUpon>frmPORECORDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPORECORDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_GM_APPROVAL.Designer.vb">
+      <DependentUpon>frmSRS_GM_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_GM_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_GM_FORM.Designer.vb">
+      <DependentUpon>frmSRS_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_MANAGER_APPROVAL.Designer.vb">
+      <DependentUpon>frmSRS_MANAGER_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_MANAGER_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frmSRS_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_MODIFY.Designer.vb">
+      <DependentUpon>frmSRS_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSRS_MODIFY_FORM.Designer.vb">
+      <DependentUpon>frmSRS_MODIFY_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSRS_MODIFY_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_1.Designer.vb">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_2.Designer.vb">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_3.Designer.vb">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_ADDSUPPLIER_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_PR_FORM_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_GMLIST.Designer.vb">
+      <DependentUpon>frmTIC_PR_GMLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_GMLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_GM_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM_VIEW.Designer.vb">
+      <DependentUpon>frmTIC_PR_GM_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_GM_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGERLIST.Designer.vb">
+      <DependentUpon>frmTIC_PR_MANAGERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM_VIEW.Designer.vb">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MANAGER_FORM_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_1.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_2.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_3.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_ADDSUPPLIER_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_PR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_RETURN_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN_FORM_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_PR_RETURN_FORM_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_RETURN_FORM_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REIMBURSEMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTLIST.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTLIST_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTLIST_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTLIST_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_GM_FORM.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_GM_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_GM_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_MANAGER_FORM.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_MANAGER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_MANAGER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_REQUEST_LIST.Designer.vb">
+      <DependentUpon>frmTIC_PR_REQUEST_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_REQUEST_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_MODIFY.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_CHECKED.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_CHECKED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_CHECKED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_FINAL.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_FINANCE.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_MANAGER.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_RECORD.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_RETURN.Designer.vb">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_RF_REPLENISHMENT_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_SLP.Designer.vb">
+      <DependentUpon>frmTIC_TRACKER_SLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_SLP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_DISPATCH.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_DISPATCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_DISPATCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_IPR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_IPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_IPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_LAZADA.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_LAZADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_LAZADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECEIVED.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_RECEIVED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECEIVED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECEIVER_SRS.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_RECEIVER_SRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECEIVER_SRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SRS.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_SRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SUPERVISOR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_SUPERVISOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SUPERVISOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_MIR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_MIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_MIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_SR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_SR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_INVENTORY LIST.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_INVENTORY LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_INVENTORY LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_DESTINATION.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR_DESTINATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_DESTINATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_GM.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_RETURN.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_LOCATION_TIC.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_LOCATION_TIC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_LOCATION_TIC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUOM.Designer.vb">
+      <DependentUpon>frmUOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUSERLIST.Designer.vb">
+      <DependentUpon>frmUSERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUSERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUSER_FORM.Designer.vb">
+      <DependentUpon>frmUSER_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUSER_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMANAGER_PO_APPROVAL.Designer.vb">
+      <DependentUpon>frmMANAGER_PO_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMANAGER_PO_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMANAGER_PO_LIST.Designer.vb">
+      <DependentUpon>frmMANAGER_PO_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMANAGER_PO_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPO_FORM_MODIFY.Designer.vb">
+      <DependentUpon>frmPO_FORM_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPO_FORM_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPO_MODIFY.Designer.vb">
+      <DependentUpon>frmPO_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPO_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_PO.Designer.vb">
+      <DependentUpon>frmTIC_TRACKER_PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_PR.Designer.vb">
+      <DependentUpon>frmTIC_TRACKER_PR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_TRACKER_PR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_IPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_IPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_LOCATION_8SI.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_LOCATION_8SI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_LOCATION_8SI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMODIFY_DR.Designer.vb">
+      <DependentUpon>frmMODIFY_DR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMODIFY_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_LAZADA.Designer.vb">
+      <DependentUpon>frmDR_LAZADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_LAZADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_LOYVERSE.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_DR_LOYVERSE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_DR_LOYVERSE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_TIKTOK.Designer.vb">
+      <DependentUpon>frmDR_TIKTOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_TIKTOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDR_SHOPEE.Designer.vb">
+      <DependentUpon>frmDR_SHOPEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDR_SHOPEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLOGIN.Designer.vb">
+      <DependentUpon>frmLOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm1HOME.Designer.vb">
+      <DependentUpon>frm1HOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm1HOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMODIFY_SI.Designer.vb">
+      <DependentUpon>frmMODIFY_SI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMODIFY_SI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNAME.Designer.vb">
+      <DependentUpon>frmNAME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNAME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST.Designer.vb">
+      <DependentUpon>frm8SI_PAYMENTREQUEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm8SI_PAYMENTREQUEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPAYMENTTERMS.Designer.vb">
+      <DependentUpon>frmPAYMENTTERMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPAYMENTTERMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCVREPLENISHMENT.Designer.vb">
+      <DependentUpon>frmPCVREPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCVREPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPRODUCT.Designer.vb">
+      <DependentUpon>frmPRODUCT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPRODUCT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPRODUCTLIST.Designer.vb">
+      <DependentUpon>frmPRODUCTLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPRODUCTLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_APPROVAL.Designer.vb">
+      <DependentUpon>frmMANAGER_PR_APPROVAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_APPROVAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_APPROVAL_FINAL.Designer.vb">
+      <DependentUpon>frmMANAGER_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_APPROVAL_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_LIST.Designer.vb">
+      <DependentUpon>frmMANAGER_PR_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMANAGER_PR_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY.Designer.vb">
+      <DependentUpon>frmTIC_PR_MODIFY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_MODIFY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPO_FORM.Designer.vb">
+      <DependentUpon>frmPO_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPO_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM.Designer.vb">
+      <DependentUpon>frmTIC_PR_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_PR_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQTY.Designer.vb">
+      <DependentUpon>frmQTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQTY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOS.Designer.vb">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREIMBURSEMENT.Designer.vb">
+      <DependentUpon>frmREIMBURSEMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREIMBURSEMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP.Designer.vb">
+      <DependentUpon>frmTIC_REQUESTSLIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIC_REQUESTSLIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRFREPLENISHMENT.Designer.vb">
+      <DependentUpon>frmRFREPLENISHMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRFREPLENISHMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSALESINVOICE.Designer.vb">
+      <DependentUpon>frmSALESINVOICE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSALESINVOICE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_MIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_FINAL.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_MIR_FINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_FINAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_MIR_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_MIR_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_RETURN.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_MIR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_MIR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_FREEBIES.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_FREEBIES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_FREEBIES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_MIR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_MIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_MIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_PO_8SI.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_PO_8SI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_PO_8SI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_PO_TIC.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_PO_TIC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_PO_TIC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RETURN.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RTV.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_RTV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_RTV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_SUPERVISOR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_SUPERVISOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_SUPERVISOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_SR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_SR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_SR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_IPR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_RR_IPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_RR_IPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSUPPLIER.Designer.vb">
+      <DependentUpon>frmSUPPLIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUPPLIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSUPPLIERLIST.Designer.vb">
+      <DependentUpon>frmSUPPLIERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUPPLIERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTICVOUCHER.Designer.vb">
+      <DependentUpon>frmTICVOUCHER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTICVOUCHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_HR.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_HR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_HR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RECEIVER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_RECEIVER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RECEIVER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RELEASER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_RELEASER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RELEASER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RETURN.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_WAREHOUSE.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SRS_WAREHOUSE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SRS_WAREHOUSE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_GM.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SR_GM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_GM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_MANAGER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SR_MANAGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_MANAGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_RECORD.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SR_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_RETURN.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_SR_RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_SR_RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_USER.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_USER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_USER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_USER_UPDATE.Designer.vb">
+      <DependentUpon>frmWAREHOUSE_USER_UPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWAREHOUSE_USER_UPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="a.resx">
+      <DependentUpon>a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm3COMMENT.resx">
+      <DependentUpon>frm3COMMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm4FINANCE_PENDNGS.resx">
+      <DependentUpon>frm4FINANCE_PENDNGS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SIVOUCHER.resx">
+      <DependentUpon>frm8SIVOUCHER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_APV_PAYMENT_REQUEST.resx">
+      <DependentUpon>frm8SI_APV_PAYMENT_REQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_APV_REIMBURSEMENT.resx">
+      <DependentUpon>frm8SI_APV_REIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_APV_RF_REPLENISHMENT.resx">
+      <DependentUpon>frm8SI_APV_RF_REPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_COO.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_FINANCE.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_GM_COO.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_GM_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_MANAGER.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_RECORD.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE_RETURN.resx">
+      <DependentUpon>frm8SI_CASHADVANCE_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_COO.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_GM_COO.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_GM_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_MANAGER.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_RECORD.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_RETURN.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION_SUPPLIER.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION_SUPPLIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_APV_CA_LIQUIDATION.resx">
+      <DependentUpon>frm8SI_APV_CA_LIQUIDATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_CALIQ.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_CALIQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_CASHADVANCE.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_CASHADVANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_COO.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_FINANCE.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_FUNDTRANSFER.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_FUNDTRANSFER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_GM.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_PAYREQUEST.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_PAYREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_RECORD.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_REIMREQUEST.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_REIMREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_RELEASING.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RELEASING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_RETURN.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CHECKVOUCHER_RFREPLENISHMENT.resx">
+      <DependentUpon>frm8SI_CHECKVOUCHER_RFREPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CR_DR.resx">
+      <DependentUpon>frm8SI_CR_DR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_COO.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_FINANCE.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_GM.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_MANAGER.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_PO.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_RECORD.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST_RETURN.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION_FINAL.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION_MANAGER.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION_RECORD.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_LIQUIDATION_RETURN.resx">
+      <DependentUpon>frm8SI_PCV_LIQUIDATION_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_FINAL.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_MANAGER.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_RECORD.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_RELEASE.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RELEASE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REIMBURSEMENT_RETURN.resx">
+      <DependentUpon>frm8SI_PCV_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER_FINAL.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER_FINANCE.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER_MANAGER.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER_RECORD.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PETTYCASHVOUCHER_RETURN.resx">
+      <DependentUpon>frm8SI_PETTYCASHVOUCHER_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_COO_FORM.resx">
+      <DependentUpon>frm8SI_PO_COO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_FORM.resx">
+      <DependentUpon>frm8SI_PO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_GMLIST.resx">
+      <DependentUpon>frm8SI_PO_GMLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_GM_FORM.resx">
+      <DependentUpon>frm8SI_PO_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_MANAGERLIST.resx">
+      <DependentUpon>frm8SI_PO_MANAGERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_MANAGER_FORM.resx">
+      <DependentUpon>frm8SI_PO_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_MODIFYFORM.resx">
+      <DependentUpon>frm8SI_PO_MODIFYFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_MODIFYLIST.resx">
+      <DependentUpon>frm8SI_PO_MODIFYLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_PR_LIST.resx">
+      <DependentUpon>frm8SI_PO_PR_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_RECORD.resx">
+      <DependentUpon>frm8SI_PO_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_ADDSUPPLIER_1.resx">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_ADDSUPPLIER_2.resx">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_ADDSUPPLIER_3.resx">
+      <DependentUpon>frm8SI_PR_ADDSUPPLIER_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_COOLIST.resx">
+      <DependentUpon>frm8SI_PR_COOLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_COO_FORM.resx">
+      <DependentUpon>frm8SI_PR_COO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_COO_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_COO_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_COO_FORM_VIEW.resx">
+      <DependentUpon>frm8SI_PR_COO_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_FORM.resx">
+      <DependentUpon>frm8SI_PR_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_FORM_RECORD.resx">
+      <DependentUpon>frm8SI_PR_FORM_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_GMLIST.resx">
+      <DependentUpon>frm8SI_PR_GMLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_GM_FORM.resx">
+      <DependentUpon>frm8SI_PR_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_GM_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_GM_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_GM_FORM_VIEW.resx">
+      <DependentUpon>frm8SI_PR_GM_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MANAGERLIST.resx">
+      <DependentUpon>frm8SI_PR_MANAGERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MANAGER_FORM.resx">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MANAGER_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MANAGER_FORM_VIEW.resx">
+      <DependentUpon>frm8SI_PR_MANAGER_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY.resx">
+      <DependentUpon>frm8SI_PR_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY_ADDSUPPLIER_1.resx">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY_ADDSUPPLIER_2.resx">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY_ADDSUPPLIER_3.resx">
+      <DependentUpon>frm8SI_PR_MODIFY_ADDSUPPLIER_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY_FORM.resx">
+      <DependentUpon>frm8SI_PR_MODIFY_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_MODIFY_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_MODIFY_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_REQUEST_LIST.resx">
+      <DependentUpon>frm8SI_PR_REQUEST_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_RETURN.resx">
+      <DependentUpon>frm8SI_PR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_RETURN_FORM.resx">
+      <DependentUpon>frm8SI_PR_RETURN_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PR_RETURN_FORM_FINAL.resx">
+      <DependentUpon>frm8SI_PR_RETURN_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_COO.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_FINAL.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_MANAGER.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_RECORD.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REIMBURSEMENT_RETURN.resx">
+      <DependentUpon>frm8SI_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTLIST.resx">
+      <DependentUpon>frm8SI_REQUESTLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTLIST_RETURN.resx">
+      <DependentUpon>frm8SI_REQUESTLIST_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_COO.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_GM_FORM.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_MANAGER_FORM.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_MODIFY.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_RECORD.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_REQUESTSLIP_RETURN.resx">
+      <DependentUpon>frm8SI_REQUESTSLIP_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_CHECKED.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_CHECKED.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_COO.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_FINAL.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_FINANCE.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_MANAGER.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_RECORD.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_RF_REPLENISHMENT_RETURN.resx">
+      <DependentUpon>frm8SI_RF_REPLENISHMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_TRACKER_PO.resx">
+      <DependentUpon>frm8SI_TRACKER_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_TRACKER_PR.resx">
+      <DependentUpon>frm8SI_TRACKER_PR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_TRACKER_SLP.resx">
+      <DependentUpon>frm8SI_TRACKER_SLP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CR_MANUAL.resx">
+      <DependentUpon>frm8SI_CR_MANUAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_COO.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_EMY.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_EMY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_CA_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmACCOUNTTITLE.resx">
+      <DependentUpon>frmACCOUNTTITLE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAPPROVED_PR.resx">
+      <DependentUpon>frmAPPROVED_PR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CASHADVANCE.resx">
+      <DependentUpon>frm8SI_CASHADVANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCATEGORY.resx">
+      <DependentUpon>frmCATEGORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHANGEPASS.resx">
+      <DependentUpon>frmCHANGEPASS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCLASSIFICATION.resx">
+      <DependentUpon>frmCLASSIFICATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOO_PO_APPROVAL_FORM.resx">
+      <DependentUpon>frmCOO_PO_APPROVAL_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOO_PO_APPROVAL_LIST.resx">
+      <DependentUpon>frmCOO_PO_APPROVAL_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOO_PR_APPROVAL.resx">
+      <DependentUpon>frmCOO_PR_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOO_PR_APPROVAL_FINAL.resx">
+      <DependentUpon>frmCOO_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOO_PR_APPROVAL_LIST.resx">
+      <DependentUpon>frmCOO_PR_APPROVAL_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_COO.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_COO.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_COO.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_COO.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_CASHADVANCE_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_CHECKVOUCHER_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_PAYMENTREQUEST_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_8SI_RF_REPLENISHMENT_FINANCE.resx">
+      <DependentUpon>frmVIEW_8SI_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_CASHADVANCE_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_CA_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_CHECKVOUCHER_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_PAYMENTREQUEST_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIEW_TIC_RF_REPLENISHMENT_FINANCE.resx">
+      <DependentUpon>frmVIEW_TIC_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR.resx">
+      <DependentUpon>frmWAREHOUSE_DR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_WAREHOUSE_MODIFY_SRS_FORM.resx">
+      <DependentUpon>frmDR_WAREHOUSE_MODIFY_SRS_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_WAREHOUSE_MODIFY_SRS_LIST.resx">
+      <DependentUpon>frmDR_WAREHOUSE_MODIFY_SRS_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_WAREHOUSE_SRS_FORM.resx">
+      <DependentUpon>frmDR_WAREHOUSE_SRS_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_WAREHOUSE_SRS_LIST.resx">
+      <DependentUpon>frmDR_WAREHOUSE_SRS_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm2EXTRACTION.resx">
+      <DependentUpon>frm2EXTRACTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGENERICNAME.resx">
+      <DependentUpon>frmGENERICNAME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PO_COOLIST.resx">
+      <DependentUpon>frm8SI_PO_COOLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPURPOSE.resx">
+      <DependentUpon>frmPURPOSE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSUPPLIER_FINANCE.resx">
+      <DependentUpon>frmSUPPLIER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSUPPLIER_FINANCE_LIST.resx">
+      <DependentUpon>frmSUPPLIER_FINANCE_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE.resx">
+      <DependentUpon>frmTIC_CASHADVANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_FINANCE.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_GM_COO.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_GM_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_MANAGER.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_RECORD.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CASHADVANCE_RETURN.resx">
+      <DependentUpon>frmTIC_CASHADVANCE_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_GM_COO.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_GM_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_MANAGER.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_RECORD.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CA_LIQUIDATION_RETURN.resx">
+      <DependentUpon>frmTIC_CA_LIQUIDATION_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_CALIQ.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_CALIQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_CASHADVANCE.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_CASHADVANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_COO.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_FINANCE.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_FUNDTRANSFER.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_FUNDTRANSFER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_GM.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_PAYREQUEST.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_PAYREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_RECORD.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_REIMREQUEST.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_REIMREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_RELEASING.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RELEASING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_RETURN.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_CHECKVOUCHER_RFREPLENISHMENT.resx">
+      <DependentUpon>frmTIC_CHECKVOUCHER_RFREPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_COO.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_COO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_FINANCE.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_GM.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_MANAGER.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_PO.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_RECORD.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PAYMENTREQUEST_RETURN.resx">
+      <DependentUpon>frmTIC_PAYMENTREQUEST_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION_FINAL.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION_FINANCE.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION_MANAGER.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION_RECORD.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_LIQUIDATION_RETURN.resx">
+      <DependentUpon>frmTIC_PCV_LIQUIDATION_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PCV_REPLENISHMENT.resx">
+      <DependentUpon>frm8SI_PCV_REPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_FINAL.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_MANAGER.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_RECORD.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_RELEASE.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RELEASE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PCV_REIMBURSEMENT_RETURN.resx">
+      <DependentUpon>frmTIC_PCV_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER_FINAL.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER_FINANCE.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER_MANAGER.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER_RECORD.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PETTYCASHVOUCHER_RETURN.resx">
+      <DependentUpon>frmTIC_PETTYCASHVOUCHER_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_COOLIST.resx">
+      <DependentUpon>frmTIC_PO_COOLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_COO_FORM.resx">
+      <DependentUpon>frmTIC_PO_COO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_FORM.resx">
+      <DependentUpon>frmTIC_PO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_GMLIST.resx">
+      <DependentUpon>frmTIC_PO_GMLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_GM_FORM.resx">
+      <DependentUpon>frmTIC_PO_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_MANAGERLIST.resx">
+      <DependentUpon>frmTIC_PO_MANAGERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_MANAGER_FORM.resx">
+      <DependentUpon>frmTIC_PO_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_MODIFYFORM.resx">
+      <DependentUpon>frmTIC_PO_MODIFYFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_MODIFYLIST.resx">
+      <DependentUpon>frmTIC_PO_MODIFYLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_PR_LIST.resx">
+      <DependentUpon>frmTIC_PO_PR_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_RECORD.resx">
+      <DependentUpon>frmTIC_PO_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_RETURNLIST.resx">
+      <DependentUpon>frmTIC_PO_RETURNLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PO_RETURN_FORM.resx">
+      <DependentUpon>frmTIC_PO_RETURN_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_COOLIST.resx">
+      <DependentUpon>frmTIC_PR_COOLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_COO_FORM.resx">
+      <DependentUpon>frmTIC_PR_COO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_COO_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_COO_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_COO_FORM_VIEW.resx">
+      <DependentUpon>frmTIC_PR_COO_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGM_PO_APPROVAL_FORM.resx">
+      <DependentUpon>frmGM_PO_APPROVAL_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGM_PO_APPROVAL_LIST.resx">
+      <DependentUpon>frmGM_PO_APPROVAL_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGM_PR_APPROVAL_FINAL.resx">
+      <DependentUpon>frmGM_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGM_PR_APPROVAL.resx">
+      <DependentUpon>frmGM_PR_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGM_PR_APPROVAL_LIST.resx">
+      <DependentUpon>frmGM_PR_APPROVAL_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmITEM.resx">
+      <DependentUpon>frmITEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmITEMLIST.resx">
+      <DependentUpon>frmITEMLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_CA_LIQUIDATION.resx">
+      <DependentUpon>frm8SI_CA_LIQUIDATION.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLOGINFORM.resx">
+      <DependentUpon>frmLOGINFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPORECORDS.resx">
+      <DependentUpon>frmPORECORDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_GM_APPROVAL.resx">
+      <DependentUpon>frmSRS_GM_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_GM_FORM.resx">
+      <DependentUpon>frmSRS_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_MANAGER_APPROVAL.resx">
+      <DependentUpon>frmSRS_MANAGER_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_MANAGER_FORM.resx">
+      <DependentUpon>frmSRS_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_MODIFY.resx">
+      <DependentUpon>frmSRS_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSRS_MODIFY_FORM.resx">
+      <DependentUpon>frmSRS_MODIFY_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_ADDSUPPLIER_1.resx">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_ADDSUPPLIER_2.resx">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_ADDSUPPLIER_3.resx">
+      <DependentUpon>frmTIC_PR_ADDSUPPLIER_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_FORM_RECORD.resx">
+      <DependentUpon>frmTIC_PR_FORM_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_GMLIST.resx">
+      <DependentUpon>frmTIC_PR_GMLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_GM_FORM.resx">
+      <DependentUpon>frmTIC_PR_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_GM_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_GM_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_GM_FORM_VIEW.resx">
+      <DependentUpon>frmTIC_PR_GM_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MANAGERLIST.resx">
+      <DependentUpon>frmTIC_PR_MANAGERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MANAGER_FORM.resx">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MANAGER_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MANAGER_FORM_VIEW.resx">
+      <DependentUpon>frmTIC_PR_MANAGER_FORM_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY_ADDSUPPLIER_1.resx">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY_ADDSUPPLIER_2.resx">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY_ADDSUPPLIER_3.resx">
+      <DependentUpon>frmTIC_PR_MODIFY_ADDSUPPLIER_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY_FORM.resx">
+      <DependentUpon>frmTIC_PR_MODIFY_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_MODIFY_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_RETURN.resx">
+      <DependentUpon>frmTIC_PR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_RETURN_FORM.resx">
+      <DependentUpon>frmTIC_PR_RETURN_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_RETURN_FORM_FINAL.resx">
+      <DependentUpon>frmTIC_PR_RETURN_FORM_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_FINAL.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_FINANCE.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_MANAGER.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_RECORD.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REIMBURSEMENT_RETURN.resx">
+      <DependentUpon>frmTIC_REIMBURSEMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTLIST.resx">
+      <DependentUpon>frmTIC_REQUESTLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTLIST_RETURN.resx">
+      <DependentUpon>frmTIC_REQUESTLIST_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_GM_FORM.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_GM_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_MANAGER_FORM.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_MANAGER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_REQUEST_LIST.resx">
+      <DependentUpon>frmTIC_PR_REQUEST_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_MODIFY.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_RECORD.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP_RETURN.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_CHECKED.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_CHECKED.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_FINAL.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_FINANCE.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_FINANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_MANAGER.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_RECORD.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_RF_REPLENISHMENT_RETURN.resx">
+      <DependentUpon>frmTIC_RF_REPLENISHMENT_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_TRACKER_SLP.resx">
+      <DependentUpon>frmTIC_TRACKER_SLP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_DISPATCH.resx">
+      <DependentUpon>frmWAREHOUSE_DR_DISPATCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_IPR.resx">
+      <DependentUpon>frmWAREHOUSE_DR_IPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_LAZADA.resx">
+      <DependentUpon>frmWAREHOUSE_DR_LAZADA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_DR_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_RECEIVED.resx">
+      <DependentUpon>frmWAREHOUSE_DR_RECEIVED.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_RECEIVER_SRS.resx">
+      <DependentUpon>frmWAREHOUSE_DR_RECEIVER_SRS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_DR_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_SRS.resx">
+      <DependentUpon>frmWAREHOUSE_DR_SRS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_SUPERVISOR.resx">
+      <DependentUpon>frmWAREHOUSE_DR_SUPERVISOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_MIR.resx">
+      <DependentUpon>frmWAREHOUSE_DR_MIR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_SR.resx">
+      <DependentUpon>frmWAREHOUSE_DR_SR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_INVENTORY LIST.resx">
+      <DependentUpon>frmWAREHOUSE_INVENTORY LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR_DESTINATION.resx">
+      <DependentUpon>frmWAREHOUSE_IPR_DESTINATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR_GM.resx">
+      <DependentUpon>frmWAREHOUSE_IPR_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_IPR_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_IPR_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR_RETURN.resx">
+      <DependentUpon>frmWAREHOUSE_IPR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_LOCATION_TIC.resx">
+      <DependentUpon>frmWAREHOUSE_LOCATION_TIC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUOM.resx">
+      <DependentUpon>frmUOM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUSERLIST.resx">
+      <DependentUpon>frmUSERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUSER_FORM.resx">
+      <DependentUpon>frmUSER_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMANAGER_PO_APPROVAL.resx">
+      <DependentUpon>frmMANAGER_PO_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMANAGER_PO_LIST.resx">
+      <DependentUpon>frmMANAGER_PO_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPO_FORM_MODIFY.resx">
+      <DependentUpon>frmPO_FORM_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPO_MODIFY.resx">
+      <DependentUpon>frmPO_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_TRACKER_PO.resx">
+      <DependentUpon>frmTIC_TRACKER_PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_TRACKER_PR.resx">
+      <DependentUpon>frmTIC_TRACKER_PR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_IPR.resx">
+      <DependentUpon>frmWAREHOUSE_IPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_LOCATION_8SI.resx">
+      <DependentUpon>frmWAREHOUSE_LOCATION_8SI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMODIFY_DR.resx">
+      <DependentUpon>frmMODIFY_DR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_LAZADA.resx">
+      <DependentUpon>frmDR_LAZADA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_DR_LOYVERSE.resx">
+      <DependentUpon>frmWAREHOUSE_DR_LOYVERSE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_TIKTOK.resx">
+      <DependentUpon>frmDR_TIKTOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDR_SHOPEE.resx">
+      <DependentUpon>frmDR_SHOPEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLOGIN.resx">
+      <DependentUpon>frmLOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm1HOME.resx">
+      <DependentUpon>frm1HOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMODIFY_SI.resx">
+      <DependentUpon>frmMODIFY_SI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNAME.resx">
+      <DependentUpon>frmNAME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm8SI_PAYMENTREQUEST.resx">
+      <DependentUpon>frm8SI_PAYMENTREQUEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPAYMENTTERMS.resx">
+      <DependentUpon>frmPAYMENTTERMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCVREPLENISHMENT.resx">
+      <DependentUpon>frmPCVREPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPRODUCT.resx">
+      <DependentUpon>frmPRODUCT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPRODUCTLIST.resx">
+      <DependentUpon>frmPRODUCTLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMANAGER_PR_APPROVAL.resx">
+      <DependentUpon>frmMANAGER_PR_APPROVAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMANAGER_PR_APPROVAL_FINAL.resx">
+      <DependentUpon>frmMANAGER_PR_APPROVAL_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMANAGER_PR_LIST.resx">
+      <DependentUpon>frmMANAGER_PR_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_MODIFY.resx">
+      <DependentUpon>frmTIC_PR_MODIFY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPO_FORM.resx">
+      <DependentUpon>frmPO_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_PR_FORM.resx">
+      <DependentUpon>frmTIC_PR_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQTY.resx">
+      <DependentUpon>frmQTY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOS.resx">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREIMBURSEMENT.resx">
+      <DependentUpon>frmREIMBURSEMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIC_REQUESTSLIP.resx">
+      <DependentUpon>frmTIC_REQUESTSLIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRFREPLENISHMENT.resx">
+      <DependentUpon>frmRFREPLENISHMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSALESINVOICE.resx">
+      <DependentUpon>frmSALESINVOICE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_MIR.resx">
+      <DependentUpon>frmWAREHOUSE_MIR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_MIR_FINAL.resx">
+      <DependentUpon>frmWAREHOUSE_MIR_FINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_MIR_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_MIR_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_MIR_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_MIR_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_MIR_RETURN.resx">
+      <DependentUpon>frmWAREHOUSE_MIR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_FREEBIES.resx">
+      <DependentUpon>frmWAREHOUSE_RR_FREEBIES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_RR_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_MIR.resx">
+      <DependentUpon>frmWAREHOUSE_RR_MIR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_PO_8SI.resx">
+      <DependentUpon>frmWAREHOUSE_RR_PO_8SI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_PO_TIC.resx">
+      <DependentUpon>frmWAREHOUSE_RR_PO_TIC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_RR_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_RETURN.resx">
+      <DependentUpon>frmWAREHOUSE_RR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_RTV.resx">
+      <DependentUpon>frmWAREHOUSE_RR_RTV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_SUPERVISOR.resx">
+      <DependentUpon>frmWAREHOUSE_RR_SUPERVISOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_SR.resx">
+      <DependentUpon>frmWAREHOUSE_RR_SR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_RR_IPR.resx">
+      <DependentUpon>frmWAREHOUSE_RR_IPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSUPPLIER.resx">
+      <DependentUpon>frmSUPPLIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSUPPLIERLIST.resx">
+      <DependentUpon>frmSUPPLIERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTICVOUCHER.resx">
+      <DependentUpon>frmTICVOUCHER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SR.resx">
+      <DependentUpon>frmWAREHOUSE_SR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS.resx">
+      <DependentUpon>frmWAREHOUSE_SRS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_HR.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_HR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_RECEIVER.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_RECEIVER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_RELEASER.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_RELEASER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_RETURN.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SRS_WAREHOUSE.resx">
+      <DependentUpon>frmWAREHOUSE_SRS_WAREHOUSE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SR_GM.resx">
+      <DependentUpon>frmWAREHOUSE_SR_GM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SR_MANAGER.resx">
+      <DependentUpon>frmWAREHOUSE_SR_MANAGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SR_RECORD.resx">
+      <DependentUpon>frmWAREHOUSE_SR_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_SR_RETURN.resx">
+      <DependentUpon>frmWAREHOUSE_SR_RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_USER.resx">
+      <DependentUpon>frmWAREHOUSE_USER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWAREHOUSE_USER_UPDATE.resx">
+      <DependentUpon>frmWAREHOUSE_USER_UPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_SYSTEM_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="the_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
